@@ -1,0 +1,298 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;  
+}
+
+h1, h2, h3{
+    font-family: 'Playfair Display', serif;
+}
+p{
+    font-size: 18px;
+}
+h1{
+    font-size: 2em;
+}
+h2{
+    font-size: 1.2em;
+}
+h3{
+    font-size: 1.2em;
+    text-align: center;
+}
+h4{
+    font-size: 1.2em;
+}
+/* Navbar for mobile*/
+.overlay{
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left:-100vw;
+    top: 0;
+    left: 0;
+    background-color: white;
+    color: rgb(12, 12, 12);
+    overflow: hidden; 
+    transition: 0.5s;
+  }
+
+.overlay-content ul{
+   list-style: none;
+   margin-right: 45px;
+ }
+
+  /* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    width: 100%; 
+    margin-top: 140px; 
+}
+
+  /* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    display: block; 
+    transition: 0.3s; 
+    font-size: 1.5em;
+}
+
+  /* Position the close button (top right corner) */ 
+.overlay .closebtn {
+    position: absolute;
+    right: 27px;
+    top: 7px;
+    font-weight: 200;
+    font-size: 25px;
+  }
+
+.social{
+    position: relative;
+    top: -6px;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 5px;
+}
+
+/* Scroll bar */
+body::-webkit-scrollbar {
+    width: 0.2em;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+  background-color:  gray;
+  outline: 1px solid rgb(7, 7, 7);
+  }
+  
+  .MediaDiv{
+      /* 
+          font-size: 1.5em; */
+          z-index: 20;
+          /* margin-left:-2vw; */
+      }
+  
+   /*media icons */
+  .icon{
+      display: inline-block;
+      font-size: 1.5em;
+      border: 1.5px solid white;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      padding-top: 2px;
+  }
+    /* media icons */
+    .icon.mobile{
+      float: right;
+      color: white;
+    }
+  
+   /* burger navbar */
+  .Bars{
+      position: relative;
+      top:25%;
+      font-size: 25px;
+  }
+
+  .mobile-only{
+      display: block;
+  }
+
+  .Desktop{
+      display: none;
+  }
+  #tagline{
+      display: block !important;
+  }
+  /* navbar */
+  .navbar-expand-lg{
+      color: black;
+      font-size: 1.5em;
+  }
+  
+  /* paragraph text for all the pages and sections */
+
+  
+  /* icons */
+  .icon a{
+      color: black;
+  }
+  .icon{
+      color: black;
+  }
+  a{
+      color: rgb(0, 0, 0);
+  }
+  
+  a:hover{
+      color: red;
+  }
+  #myNav{
+      display: none;
+  }
+
+/* about********************************************************************************************** */
+.joburg{
+    height: 30vh;
+    width: 100vw;
+}
+
+/* projects***************************************************************************************************** */
+.carousel-indicators .active{
+    background-color:gray;
+}
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 2px solid;
+    display: inline-block !important;
+    
+  }
+
+/* donate************************************************************************************************** */
+
+.qr{
+    font-size: 100px;
+}
+.gray{
+    background-color: #f4f4f4;
+}
+
+  /* form *********************************************************************************************/
+  button{
+    text-decoration: none;
+    border: 0.5px solid red;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.3em;
+    background: red;
+    padding:6px;
+  }
+  
+  /* footer ***********************************************************************************************/
+.word-footer{
+    font-size: 20px; 
+  }
+  
+  #foot-icons{
+    border-radius: 50%;
+    border: solid 1px black;
+    font-size: 20px;
+    padding: 10px;
+    color:#292929;
+  }
+  
+  #bookface{
+    border-radius: 50%;
+    border: solid 1px black;
+    font-size: 20px;
+    padding: 10px 14px;
+    color:#292929;
+  }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+.joburg{
+    height: 40vh !important;
+    width: 93vw;
+
+}
+.navigation{
+    font-size: 1.3em;
+     text-transform: uppercase;
+}
+
+.navigation h1{
+    margin-left: 3em;
+    font-size: 0.6em;
+    text-transform: uppercase;
+}
+.logo{
+    width:80px;
+    height: auto;
+}
+.img-fluid{
+    height:auto;
+}
+.hero{
+    height:100vh;
+}
+h1{
+    font-size: 4em;
+}
+h2{
+    font-size: 2em;
+}
+
+.arrow{
+    font-size: 60px;
+    text-align: center;
+
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .mobile-only{
+        display: none;
+    }
+    .Desktop{
+    display: block;
+    color: black;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
